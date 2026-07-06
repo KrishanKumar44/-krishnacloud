@@ -3,75 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Cloud - Linux & Cloud Interview Prep</title>
+    <title>Krishna Cloud | Linux & Cloud Interview Portal</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #0f172a; color: #f8fafc;">
 
-    <!-- Profile Header Section -->
-    <section style="background: #1e293b; padding: 50px 20px; text-align: center; border-bottom: 1px solid #334155;">
-        <div style="max-width: 600px; margin: 0 auto;">
-            <!-- Profile Initial Badge -->
-            <div style="width: 80px; height: 80px; background: #38bdf8; color: #0f172a; font-size: 2rem; font-weight: bold; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 20px auto; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);">
-                KC
-            </div>
-            <h1 style="font-size: 2.5rem; margin: 0; color: #f1f5f9;">Krishna Kumar</h1>
-            <p style="font-size: 1.2rem; color: #38bdf8; margin: 10px 0 0 0; font-weight: 500;">Linux & Cloud Engineer</p>
-            <p style="color: #94a3b8; line-height: 1.6; margin-top: 15px;">Welcome to my technical space. Here I share essential Linux and Cloud computing concepts, cheat sheets, and interview preparation guides.</p>
-        </div>
-    </section>
+<body>
 
-    <!-- Interview Topics Section -->
-    <main style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
-        
-        <h2 style="font-size: 1.8rem; color: #f1f5f9; border-bottom: 2px solid #38bdf8; padding-bottom: 10px; margin-bottom: 30px;">
-            📋 Basic Interview Questions & Answers
-        </h2>
+<header>
+    <div class="logo">
+        <h2>☁ Krishna Cloud</h2>
+    </div>
 
-        <!-- Q&A Container -->
-        <div style="display: flex; flex-direction: column; gap: 25px;">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Linux</a>
+        <a href="#">Cloud</a>
+        <a href="#">DevOps</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-            <!-- Question 1 -->
-            <div style="background: #1e293b; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-                <span style="background: #38bdf8; color: #0f172a; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase;">Linux</span>
-                <h3 style="margin: 15px 0 10px 0; color: #f1f5f9; font-size: 1.3rem;">Q1: What is the difference between Soft Link and Hard Link?</h3>
-                <p style="color: #cbd5e1; line-height: 1.6; margin: 0;">
-                    <strong>Answer:</strong> A <strong>Soft Link</strong> (Symlink) is a shortcut to the original file path. If the original file is deleted, the soft link breaks. A <strong>Hard Link</strong> is a direct pointer to the file's data (same Inode number). Even if the original file is deleted, you can still access the data through the hard link.
-                </p>
-            </div>
+<section class="hero">
 
-            <!-- Question 2 -->
-            <div style="background: #1e293b; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-                <span style="background: #10b981; color: #0f172a; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase;">Cloud</span>
-                <h3 style="margin: 15px 0 10px 0; color: #f1f5f9; font-size: 1.3rem;">Q2: What is Cloud Computing and its service models?</h3>
-                <p style="color: #cbd5e1; line-height: 1.6; margin: 0;">
-                    <strong>Answer:</strong> Cloud computing is the delivery of computing services (servers, storage, databases, networking) over the internet. There are three main service models:
-                    <br><br>
-                    • <strong>IaaS (Infrastructure as a Service):</strong> Gives you raw infrastructure (e.g., AWS EC2, Azure VM).
-                    <br>
-                    • <strong>PaaS (Platform as a Service):</strong> Gives you a platform to deploy code without managing servers (e.g., AWS Elastic Beanstalk, GitHub Pages).
-                    <br>
-                    • <strong>SaaS (Software as a Service):</strong> Fully managed ready-to-use software (e.g., Gmail, Google Drive).
-                </p>
-            </div>
+<h1>Linux & Cloud Interview Portal</h1>
 
-            <!-- Question 3 -->
-            <div style="background: #1e293b; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-                <span style="background: #38bdf8; color: #0f172a; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase;">Linux</span>
-                <h3 style="margin: 15px 0 10px 0; color: #f1f5f9; font-size: 1.3rem;">Q3: How do you check RAM and CPU usage in Linux?</h3>
-                <p style="color: #cbd5e1; line-height: 1.6; margin: 0;">
-                    <strong>Answer:</strong> 
-                    To check RAM usage, we use the <code>free -m</code> or <code>free -h</code> command. 
-                    To check CPU usage and live running processes, we use the <code>top</code> or <code>htop</code> command.
-                </p>
-            </div>
+<p>
+Learn Linux, Cloud, DevOps and System Administration with
+real interview questions, commands and practical examples.
+</p>
 
-        </div>
-    </main>
+<input
+type="text"
+id="searchBox"
+placeholder="Search Interview Questions...">
 
-    <!-- Footer Section -->
-    <footer style="text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; border-top: 1px solid #1e293b; margin-top: 60px;">
-        &copy; 2026 Krishna Cloud. Managed with GitHub Pages & Cloudflare.
-    </footer>
+</section>
+
+<section class="categories">
+
+<div class="card">
+<h2>🐧 Linux</h2>
+<p>500+ Questions</p>
+</div>
+
+<div class="card">
+<h2>☁ Cloud</h2>
+<p>300+ Questions</p>
+</div>
+
+<div class="card">
+<h2>🐳 Docker</h2>
+<p>150+ Questions</p>
+</div>
+
+<div class="card">
+<h2>⚙ DevOps</h2>
+<p>200+ Questions</p>
+</div>
+
+</section>
+
+<section class="questions">
+
+<h2>Latest Interview Questions</h2>
+
+<div class="question">
+
+<span class="tag">Linux</span>
+
+<h3>
+Q1. What is Soft Link?
+</h3>
+
+<h4>Answer</h4>
+
+<p>
+
+Soft Link (Symbolic Link) is a shortcut to another file or
+directory.
+
+If original file is deleted,
+
+Soft Link becomes broken.
+
+</p>
+
+<h4>Command</h4>
+
+<pre>
+
+ln -s source_file softlink
+
+</pre>
+
+<h4>Real Time Example</h4>
+
+<p>
+
+Apache and Nginx use symbolic links for website configuration.
+
+</p>
+
+<h4>Follow-up Questions</h4>
+
+<ul>
+
+<li>What is Hard Link?</li>
+
+<li>What is Inode?</li>
+
+<li>Can we create Hard Link for directory?</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Krishna Cloud
+
+Linux | Cloud | DevOps Interview Portal
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
