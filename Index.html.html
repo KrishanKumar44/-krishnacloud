@@ -1,0 +1,62 @@
+<!-- Q2. Inode Numbers -->
+<div class="question">
+    <span class="tag">Linux</span>
+    <h3>Q2. What is an Inode in Linux?</h3>
+    <h4>Answer</h4>
+    <p>
+        An Inode (Index Node) is a data structure on a Linux file system that stores all metadata about a file except its name and actual content. It contains info like file size, permissions, owner, and block locations.
+    </p>
+    <h4>Command</h4>
+    <pre>ls -i filename</pre>
+    <h4>Real Time Example</h4>
+    <p>
+        When troubleshooting a server that says "No space left on device" but `df -h` shows plenty of disk space, it usually means the system has run out of available Inodes due to millions of tiny files (like session files or mail queues).
+    </p>
+    <h4>Follow-up Questions</h4>
+    <ul>
+        <li>Can two files have the same inode number?</li>
+        <li>How to find total available inodes on a file system?</li>
+    </ul>
+</div>
+
+<!-- Q3. Docker Layers -->
+<div class="question">
+    <span class="tag">Docker</span>
+    <h3>Q3. Why are Docker Images immutable and how do layers work?</h3>
+    <h4>Answer</h4>
+    <p>
+        Docker images are built using a series of read-only layers. Each instruction in a Dockerfile creates a new layer. When you run a container, Docker adds a thin writable layer (Container Layer) on top.
+    </p>
+    <h4>Command</h4>
+    <pre>docker history image_name</pre>
+    <h4>Real Time Example</h4>
+    <p>
+        To optimize pipeline speeds and reduce disk usage, we place instructions that change frequently (like copying source code) at the bottom of the Dockerfile, and stable steps (like installing system packages) at the top to make full use of layer caching.
+    </p>
+    <h4>Follow-up Questions</h4>
+    <ul>
+        <li>What is the difference between an Image and a Container?</li>
+        <li>How does copy-on-write (CoW) strategy work in Docker?</li>
+    </ul>
+</div>
+
+<!-- Q4. Ansible Playbooks -->
+<div class="question">
+    <span class="tag">DevOps</span>
+    <h3>Q4. What is Idempotency in Ansible?</h3>
+    <h4>Answer</h4>
+    <p>
+        Idempotency means that running an Ansible playbook multiple times on a target system will yield the same result, and it will only make changes if the system is not already in the desired state.
+    </p>
+    <h4>Command</h4>
+    <pre>ansible-playbook site.yml --check</pre>
+    <h4>Real Time Example</h4>
+    <p>
+        If you run a playbook to install Nginx on 50 servers, Ansible will check each server first. If 40 servers already have Nginx properly installed, it will skip them ("ok") and only install it on the remaining 10 ("changed"), ensuring no broken configuration or unnecessary service restarts occur.
+    </p>
+    <h4>Follow-up Questions</h4>
+    <ul>
+        <li>What is the difference between Ansible modules and ad-hoc commands?</li>
+        <li>How do you handle sensitive data like passwords in Ansible playbooks?</li>
+    </ul>
+</div>
